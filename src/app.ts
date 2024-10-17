@@ -8,7 +8,6 @@ const App = async() => {
     let clientList: Client[] = await getClientData();
     let hotelList: Hotel[] = await getHotelList();
 
-
     console.log(hotelList)
     console.log(clientList)
 }

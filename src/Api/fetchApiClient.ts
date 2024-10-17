@@ -1,6 +1,6 @@
 import { ClientImp } from "../Interfaces/ClientImp";
 
-const getInfoClient = async ():Promise<ClientImp[] | undefined> => {
+const fetchInfoClients = async ():Promise<ClientImp[] | undefined> => {
     try {
         return await fetch(`https://jsonplaceholder.typicode.com/users`)
             .then((response) => {
@@ -14,4 +14,4 @@ const getInfoClient = async ():Promise<ClientImp[] | undefined> => {
     }
 }
 
-export  {getInfoClient}
+export  {fetchInfoClients}
